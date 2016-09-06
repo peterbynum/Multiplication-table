@@ -1,7 +1,7 @@
 """
 multiplication-table.py
 Author: Peter Bynum
-Credit: None
+Credit: user "Pitarou" from http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
 Assignment: Multiplication Table
 
 Write and submit a Python program that prints a multiplication table. The user 
@@ -33,4 +33,4 @@ for i in range(1,(h+1)):
         line = line + "{0:>3} ".format(i*j) #http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
     print(line)
 
-#The line that I found online is cleverly simple. It set a strand ("line") equal to nothing, and then it builds it up using the function in line 33.
+#The line that I found online is cleverly simple. It sets a strand ("line") equal to nothing, and then it builds it up using the function in line 33.
