@@ -21,10 +21,26 @@ Height of multiplication table: 8
   7  14  21  28  35  42  49  56  63  70
   8  16  24  32  40  48  56  64  72  80
 """
+
+
+
 w = int(input("Width of multiplication table: "))
 h = int(input("Height of multiplication table: "))
 print()
-for i in range(1,(h+1)):
-    [print("{0:>3}".format(i*j)) for j in range(1,w+1)]
+for row in range(1,(h+1)):
+    line = ''
+    for column in range(1,w+1):
+        line = line + "{0:>3} ".format(row*column)
+    print(line)
 
-"j for j in range(0,h)"
+#http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
+
+
+"""
+n = 5
+for i in range(1,n+1):
+    s = ''
+    for j in range(1,n+1):
+        s += '{:3} '.format(i*j)
+    print(s)
+"""
