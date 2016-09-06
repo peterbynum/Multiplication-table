@@ -27,20 +27,10 @@ Height of multiplication table: 8
 w = int(input("Width of multiplication table: "))
 h = int(input("Height of multiplication table: "))
 print()
-for row in range(1,(h+1)):
+for i in range(1,(h+1)):
     line = ''
-    for column in range(1,w+1):
-        line = line + "{0:>3} ".format(row*column)
+    for j in range(1,w+1):
+        line = line + "{0:>3} ".format(i*j) #http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
     print(line)
 
-#http://stackoverflow.com/questions/20415384/properly-formatted-multiplication-table
-
-
-"""
-n = 5
-for i in range(1,n+1):
-    s = ''
-    for j in range(1,n+1):
-        s += '{:3} '.format(i*j)
-    print(s)
-"""
+#The line that I found online is cleverly simple. It set a strand ("line") equal to nothing, and then it builds it up using the function in line 33.
